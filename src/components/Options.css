@@ -1,0 +1,49 @@
+.optionsSelectionArea {
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.options {
+  margin: 0px 20px;
+}
+
+.options * {
+  margin: 0 30px;
+  font-size: 90px;
+  border: 2px solid #c9adad;
+  padding: 2%;
+  border-radius: 30px;
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+}
+
+.options *:hover {
+  background-color: antiquewhite;
+  color: #1f3757;
+  padding: 1%;
+}
+
+.play {
+  border: 1px solid antiquewhite;
+  border-radius: 30px;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.play:hover {
+  background-color: antiquewhite;
+  color: #1f3757;
+  transform: scale(1.2, 1.2);
+}
