@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Main.css';
-import { FaHandRock } from 'react-icons/fa';
+import { FaHandRock, FaHandPaper, FaHandScissors } from 'react-icons/fa';
 import Options from './Options';
 
 const Main = () => {
@@ -13,9 +13,9 @@ const Main = () => {
   const [winner, setWinner] = useState('');
 
   const options = [
-    { name: 'Rock', icon: '<FaHandRock />' },
-    { name: 'Paper', icon: '<FaHandPaper />' },
-    { name: 'Scissors', icon: '<FaHandScissors />' },
+    { name: 'Rock', icon: <FaHandRock className='initialIcon' /> },
+    { name: 'Paper', icon: <FaHandPaper className='initialIcon' /> },
+    { name: 'Scissors', icon: <FaHandScissors className='initialIcon' /> },
   ];
 
   useEffect(() => {
@@ -44,17 +44,17 @@ const Main = () => {
       (playerPlay === 'Scissors' && compPlay === 'Paper')
     ) {
       setWinner('You win!');
+      setPlayerScore(playerScore + 1);
     } else {
       setWinner('You lose!');
+      setCompScore(compScore + 1);
     }
-    console.log('Winner:',compPlay, playerPlay);
-    setCompPlay('');
-    setPlayerPlay('');
-    console.log('Over:',compPlay, playerPlay);
   };
 
   const selectedOptionHandler = (option) => {
     if (options[option]) {
+      setCompPlay('');
+      setPlayerPlay('');
       setWinner('');
       setPlayerPlay(options[option].name);
       computerPlay();
@@ -67,15 +67,19 @@ const Main = () => {
       <div className='main'>
         <div className='computer'>
           <div className='score'>
-            <label htmlFor='Score'>Score:</label>
+            <label htmlFor='Score'>Computer: </label>
             {compScore}
           </div>
           <div className='hand'>
-            <FaHandRock
-              className={
-                runTimer && timer > 0 ? 'initialIcon hover' : 'initialIcon'
-              }
-            />
+            {compPlay && winner ? (
+              options.find((option) => option.name === compPlay)?.icon
+            ) : (
+              <FaHandRock
+                className={
+                  runTimer && timer > 0 ? 'initialIcon hover' : 'initialIcon'
+                }
+              />
+            )}
           </div>
         </div>
         {runTimer ? (
@@ -85,15 +89,19 @@ const Main = () => {
         )}
         <div className='player'>
           <div className='score'>
-            <label htmlFor='Score'>Score:</label>
+            <label htmlFor='Score'>Player: </label>
             {playerScore}
           </div>
           <div className='hand'>
-            <FaHandRock
-              className={
-                runTimer && timer > 0 ? 'initialIcon hover' : 'initialIcon'
-              }
-            />
+            {playerPlay && winner ? (
+              options.find((option) => option.name === playerPlay)?.icon
+            ) : (
+              <FaHandRock
+                className={
+                  runTimer && timer > 0 ? 'initialIcon hover' : 'initialIcon'
+                }
+              />
+            )}
           </div>
         </div>
       </div>
