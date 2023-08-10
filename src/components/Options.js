@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Options.css';
 import { FaHandRock, FaHandPaper, FaHandScissors } from 'react-icons/fa';
 
-const Options = () => {
+const Options = ({ selectedOptionHandler }) => {
+  const [play, setPlay] = useState('');
+
+  const optionHandler = (option) => {
+    if (selectedOptionHandler) {
+      selectedOptionHandler(option);
+    }
+  };
   return (
     <div className='optionsSelectionArea'>
       <div className='options'>
-        <FaHandRock />
-        <FaHandPaper />
-        <FaHandScissors />
+        <FaHandRock onClick={() => setPlay('Rock')} />
+        <FaHandPaper onClick={() => setPlay('Paper')} />
+        <FaHandScissors onClick={() => setPlay('Scissors')} />
       </div>
-      <div className='play'><span>Play</span></div>
+      {play ? (
+        <div className='play' onClick={() => optionHandler(play)}>
+          <span>Play</span>
+        </div>
+      ) : (
+        ''
+      )}
     </div>
   );
 };

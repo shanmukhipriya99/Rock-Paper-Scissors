@@ -5,7 +5,9 @@ import Options from './Options';
 
 const Main = () => {
   const [timer, setTimer] = useState(3);
-  const [runTimer, setRunTimer] = useState(true);
+  const [runTimer, setRunTimer] = useState(false);
+  const [playerScore, setPlayerScore] = useState(0);
+  const [compScore, setCompScore] = useState(0);
 
   useEffect(() => {
     if (runTimer && timer > 0) {
@@ -19,13 +21,19 @@ const Main = () => {
     }
   }, [runTimer, timer]);
 
+  const selectedOptionHandler = (option) => {
+    if (option === 'Rock' || option === 'Paper' || option === 'Scissors') {
+      setRunTimer(true);
+    }
+  };
+
   return (
     <div className='playArea'>
       <div className='main'>
         <div className='computer'>
           <div className='score'>
             <label htmlFor='Score'>Score:</label>
-            10
+            {compScore}
           </div>
           <div className='hand'>
             <FaHandRock
@@ -43,7 +51,7 @@ const Main = () => {
         <div className='player'>
           <div className='score'>
             <label htmlFor='Score'>Score:</label>
-            10
+            {playerScore}
           </div>
           <div className='hand'>
             <FaHandRock
@@ -54,7 +62,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <Options />
+      <Options selectedOptionHandler={selectedOptionHandler} />
     </div>
   );
 };
