@@ -15,7 +15,6 @@
   width: 40vw;
   height: 80%;
   margin: 0 20px;
-  border: 2px solid beige;
   display: flex;
   flex-direction: column;
 }
@@ -37,7 +36,7 @@
   }
 }
 
-.initialIcon:hover {
+.initialIcon.hover {
   animation: sway 1s ease infinite;
 }
 
@@ -45,7 +44,9 @@
   width: 20vw;
   height: 80%;
   margin: 0 20px;
-  border: 2px solid beige;
+  color: beige;
+  font-size: 300px;
+  text-align: center;
 }
 
 .score {
