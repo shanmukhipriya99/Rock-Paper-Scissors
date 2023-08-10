@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  height: 60vh;
+}
+
+.computer,
+.player {
+  width: 40vw;
+  height: 100%;
+  margin: 0 20px;
+  border: 2px solid beige;
+}
+
+.timer {
+  width: 20vw;
+  margin: 0 20px;
+  border: 2px solid beige;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  background: bisque;
+  width: 110px;
+  height: 110px;
+  font-size: 30px;
+  font-weight: 600;
+}
