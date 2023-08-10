@@ -9,6 +9,28 @@
   height: 100%;
   margin: 0 20px;
   border: 2px solid beige;
+  display: flex;
+  flex-direction: column;
+}
+
+.initialIcon {
+  color: antiquewhite;
+  width: 50%;
+  height: 50%;
+  margin: 50px 120px;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.initialIcon:hover {
+  animation: sway 1s ease infinite;
 }
 
 .timer {
