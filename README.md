@@ -1,6 +1,8 @@
 # Rock-Paper-Scissors
 A Rock-Paper-Scissors game with React.js
 
+Hosted on: https://shanmukhipriya99.github.io/Rock-Paper-Scissors/
+
 ## Screenshot
 
 ![image](https://github.com/shanmukhipriya99/Rock-Paper-Scissors/assets/37501487/b3bc80d5-8f92-414a-b036-b0579d794e53)
