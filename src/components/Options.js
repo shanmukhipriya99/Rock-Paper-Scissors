@@ -14,9 +14,9 @@ const Options = ({ selectedOptionHandler }) => {
   return (
     <div className='optionsSelectionArea'>
       <div className='options'>
-        <FaHandRock onClick={() => setPlay(1)} />
-        <FaHandPaper onClick={() => setPlay(2)} />
-        <FaHandScissors onClick={() => setPlay(3)} />
+        <FaHandRock className={play === 1 ? 'clicked' : ''} onClick={() => setPlay(1)} />
+        <FaHandPaper className={play === 2 ? 'clicked' : ''} onClick={() => setPlay(2)} />
+        <FaHandScissors className={play === 3 ? 'clicked' : ''} onClick={() => setPlay(3)} />
       </div>
       {play ? (
         <div className='play' onClick={() => optionHandler(play-1)}>

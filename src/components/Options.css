@@ -23,6 +23,12 @@
   cursor: pointer;
 }
 
+.clicked {
+  background-color: antiquewhite;
+  color: #1f3757;
+  padding: 1%;
+}
+
 .options *:hover {
   background-color: antiquewhite;
   color: #1f3757;
