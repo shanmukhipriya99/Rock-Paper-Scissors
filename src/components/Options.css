@@ -53,3 +53,35 @@
   color: #1f3757;
   transform: scale(1.2, 1.2);
 }
+
+@media only screen and (max-width: 520px) {
+  .options {
+    margin: 0;
+  }
+
+  .options * {
+    margin: 0 5px;
+    font-size: 90px;
+    border: 2px solid #c9adad;
+    padding: 2%;
+    border-radius: 30px;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .options * {
+    margin: 0 5px;
+    font-size: 90px;
+    border: 1px solid #c9adad;
+    border-radius: 30px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+  }
+  .play {
+    margin-top: 5px;
+  }
+}

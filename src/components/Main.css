@@ -94,3 +94,165 @@
   font-size: 30px;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 1200px) {
+  .initialIcon {
+    color: antiquewhite;
+    width: 60%;
+    height: 60%;
+    margin-left: 80px;
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .initialIcon {
+    color: antiquewhite;
+    width: 60%;
+    height: 60%;
+    padding-right: 30px;
+    justify-content: center;
+  }
+
+  @keyframes win {
+    0% {
+      transform: scale(0, 0);
+    }
+    50% {
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      transform: scale(0, 0);
+    }
+  }
+
+  .timer {
+    width: 20vw;
+    height: 80%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    font-size: 200px;
+    text-align: center;
+  }
+
+  .playArea {
+    display: flex;
+    flex-direction: column;
+    height: 74vh;
+    margin: 0;
+  }
+
+  .computer,
+  .player {
+    width: 40vw;
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .timer {
+    width: 20vw;
+    height: 80%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    font-size: 100px;
+    text-align: center;
+  }
+
+  @keyframes win {
+    0% {
+      transform: scale(0, 0);
+    }
+    50% {
+      transform: scale(0.2, 0.2);
+    }
+    100% {
+      transform: scale(0, 0);
+    }
+  }
+  .winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 80%;
+    margin: 0 5px;
+    color: beige;
+    font-size: 100px;
+    text-align: center;
+    animation: win 3s ease infinite;
+  }
+
+  .initialIcon {
+    color: antiquewhite;
+    width: 60%;
+    height: 60%;
+    margin: 50px;
+  }
+
+  .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background: bisque;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .timer {
+    width: 20vw;
+    height: 80%;
+    margin: 30px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  @keyframes win {
+    0% {
+      transform: scale(0, 0);
+    }
+    50% {
+      transform: scale(0.2, 0.2);
+    }
+    100% {
+      transform: scale(0, 0);
+    }
+  }
+  .winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 80%;
+    margin: 30px 5px;
+    color: beige;
+    font-size: 100px;
+    text-align: center;
+    animation: win 3s ease infinite;
+  }
+
+  .initialIcon {
+    color: antiquewhite;
+    width: 60%;
+    height: 60%;
+    margin: 50px;
+  }
+}
