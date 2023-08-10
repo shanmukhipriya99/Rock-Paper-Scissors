@@ -1,5 +1,5 @@
 .optionsSelectionArea {
-  color: antiquewhite;
+  color: rgba(242, 193, 71, 0.94);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -15,7 +15,7 @@
 .options * {
   margin: 0 30px;
   font-size: 90px;
-  border: 2px solid #c9adad;
+  border: 2px solid rgb(193, 200, 246);
   padding: 2%;
   border-radius: 30px;
   width: 110px;
@@ -24,19 +24,19 @@
 }
 
 .clicked {
-  background-color: antiquewhite;
-  color: #1f3757;
+  background-color: rgba(193, 200, 246, 0.432);
+  color: rgba(242, 193, 71, 0.94);
   padding: 1%;
 }
 
 .options *:hover {
-  background-color: antiquewhite;
-  color: #1f3757;
+  background-color: rgba(193, 200, 246, 0.432);
+  color: rgba(242, 193, 71, 0.94);
   padding: 1%;
 }
 
 .play {
-  border: 1px solid antiquewhite;
+  border: 1px solid rgb(193, 200, 246);
   border-radius: 30px;
   margin-top: 20px;
   width: 150px;
@@ -49,8 +49,8 @@
 }
 
 .play:hover {
-  background-color: antiquewhite;
-  color: #1f3757;
+  background-color: rgba(193, 200, 246, 0.432);
+  color: rgba(242, 193, 71, 0.94);
   transform: scale(1.2, 1.2);
 }
 

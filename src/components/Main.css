@@ -25,7 +25,7 @@
 }
 
 .initialIcon {
-  color: antiquewhite;
+  color: rgba(242, 193, 71, 0.94);
   width: 60%;
   height: 60%;
   margin-left: 120px;
@@ -52,7 +52,8 @@
   width: 20vw;
   height: 80%;
   margin: 0 20px;
-  color: beige;
+  color: rgba(242, 193, 71, 0.94);
+  text-shadow: 4px 4px 7px rgba(242, 193, 71, 0.729);
   font-size: 300px;
   text-align: center;
 }
@@ -76,7 +77,8 @@
   width: 20vw;
   height: 80%;
   margin: 0 20px;
-  color: beige;
+  color: rgba(242, 193, 71, 0.94);
+  text-shadow: 4px 4px 7px rgba(242, 193, 71, 0.729);
   font-size: 100px;
   text-align: center;
   animation: win 3s ease infinite;
@@ -88,7 +90,7 @@
   justify-content: center;
   align-items: center;
   padding: 3%;
-  background: bisque;
+  background: rgb(193, 200, 246);
   width: 210px;
   height: 110px;
   font-size: 30px;
@@ -97,7 +99,7 @@
 
 @media only screen and (max-width: 1200px) {
   .initialIcon {
-    color: antiquewhite;
+    color: white;
     width: 60%;
     height: 60%;
     margin-left: 80px;
@@ -107,7 +109,7 @@
 
 @media only screen and (max-width: 750px) {
   .initialIcon {
-    color: antiquewhite;
+    color: white;
     width: 60%;
     height: 60%;
     padding-right: 30px;
@@ -133,7 +135,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: beige;
+    color: white;
     font-size: 200px;
     text-align: center;
   }
@@ -163,7 +165,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: beige;
+    color: white;
     font-size: 100px;
     text-align: center;
   }
@@ -186,14 +188,14 @@
     width: 20vw;
     height: 80%;
     margin: 0 5px;
-    color: beige;
+    color: white;
     font-size: 100px;
     text-align: center;
     animation: win 3s ease infinite;
   }
 
   .initialIcon {
-    color: antiquewhite;
+    color: white;
     width: 60%;
     height: 60%;
     margin: 50px;
@@ -220,7 +222,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: beige;
+    color: white;
     font-size: 60px;
     text-align: center;
   }
@@ -243,14 +245,14 @@
     width: 20vw;
     height: 80%;
     margin: 30px 5px;
-    color: beige;
+    color: white;
     font-size: 100px;
     text-align: center;
     animation: win 3s ease infinite;
   }
 
   .initialIcon {
-    color: antiquewhite;
+    color: white;
     width: 60%;
     height: 60%;
     margin: 50px;

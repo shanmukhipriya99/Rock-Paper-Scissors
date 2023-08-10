@@ -1,6 +1,6 @@
 .header {
   height: 20vh;
-  color: rgb(255, 255, 255);
+  color: rgba(242, 193, 71, 0.94);
 }
 
 .title {
@@ -8,7 +8,7 @@
   font-weight: 600;
   text-align: center;
   margin-top: 50px;
-  text-shadow: 4px 4px 7px rgba(255, 255, 255, 0.729);
+  text-shadow: 4px 4px 7px rgba(242, 193, 71, 0.729);
 }
 
 .title > span {
