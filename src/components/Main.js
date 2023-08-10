@@ -4,12 +4,12 @@ import { FaHandRock } from 'react-icons/fa';
 import Options from './Options';
 
 const Main = () => {
-  let [timer, setTimer] = useState(3);
-  let [runTimer, setRunTimer] = useState(false);
+  const [timer, setTimer] = useState(3);
+  const [runTimer, setRunTimer] = useState(true);
 
   useEffect(() => {
     if (runTimer && timer > 0) {
-      setInterval(() => {
+      setTimeout(() => {
         setTimer(timer - 1);
         console.log(timer);
       }, 1000);
